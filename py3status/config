@@ -1,0 +1,13 @@
+general {
+    output_format  = i3bar   
+    colors = true
+    color_bad = "#cc6666"
+    color_degraded = "#f0c674"
+    color_good = "#b5bd68"
+}
+
+order += "time"
+
+time {
+    format = "%d-%m-%Y %H:%M:%S" 
+}
