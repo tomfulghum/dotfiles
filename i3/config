@@ -4,7 +4,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Source Code Pro 10
+font pango:Source Code Pro 12
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -155,6 +155,7 @@ client.urgent           $base02     $base08     $base07     $base08
 bar {
         status_command py3status -c ~/.config/i3/py3status/config
         position top
+        separator_symbol "   "
 
         colors {
             background  $base00
@@ -169,7 +170,17 @@ bar {
 }
 
 # rofi
-bindsym $mod+d exec rofi -show run -bw 3 -font "Source Code Pro 12" -separator-style solid
+bindsym $mod+d exec rofi -show run -bw 2 -lines 10 -width 500 -line-margin 5 -font "Source Code Pro 12" -separator-style solid -hide-scrollbar
+
+# Media keys
+bindsym XF86AudioRaiseVolume exec amixer set Master 2+
+bindsym XF86AudioLowerVolume exec amixer set Master 2-
+bindsym XF86AudioMute exec amixer set Master toggle
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 
 # gaps
 for_window [class="^.*"] border pixel 3

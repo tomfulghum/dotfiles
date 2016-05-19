@@ -4,10 +4,43 @@ general {
     color_bad = "#cc6666"
     color_degraded = "#f0c674"
     color_good = "#b5bd68"
+    interval = 5
 }
 
+order += "volume master"
+order += "wireless wlp58s0"
+order += "battery 0"
 order += "time"
 
-time {
-    format = "%d-%m-%Y %H:%M:%S" 
+spotify {
+    cache_timeout = 2
+    format = "   {artist} - {title}"
+    format_stopped = "   {artist} - {title}"
+    format_down = ""
 }
+
+volume master {
+    format = "  %volume"
+    format_muted = "  %volume"
+}
+    
+wireless wlp58s0 {
+    format_up = "  %essid"
+    format_down = "  down"
+}
+
+battery 0 {
+    format = "%status  %percentage (%remaining)"
+    status_chr = ""
+    status_bat = ""
+    status_full = ""
+    low_threshold = 15
+    threshold_type = "percentage"
+    integer_battery_capacity = true
+    hide_seconds = true
+}
+
+time {
+    format = "  %d-%m-%Y %H:%M:%S" 
+}
+
