@@ -69,3 +69,5 @@ unsetopt sharehistory
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias rvim="sudo -E vim"
+alias tumvpn-connect="sudo openconnect -b --pid-file /run/openconnect_wlp58s0.pid --config ~/.config/vpn/lrz asa-cluster.lrz.de"
+alias tumvpn-disconnect="sudo pkill -2 openconnect"

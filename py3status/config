@@ -9,6 +9,7 @@ general {
 
 order += "volume master"
 order += "wireless wlp58s0"
+order += "run_watch openconnect"
 order += "battery 0"
 order += "time"
 
@@ -27,6 +28,12 @@ volume master {
 wireless wlp58s0 {
     format_up = "  %essid"
     format_down = "  down"
+}
+
+run_watch openconnect {
+    pidfile = "/run/openconnect*.pid"
+    format = "VPN"
+    format_down = ""
 }
 
 battery 0 {

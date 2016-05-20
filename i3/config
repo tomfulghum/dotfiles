@@ -185,6 +185,12 @@ bar {
 # rofi
 bindsym $mod+d exec rofi -show run -bw 2 -lines 10 -width 500 -line-margin 5 -font "Source Code Pro 12" -separator-style solid -hide-scrollbar
 
+# screenshot
+bindsym $mod+shift+s exec scrot ~/pictures/screenshots/%Y-%d-%m-%T-scrot.png
+
+# lock
+bindsym $mod+x exec i3lock-fancy -f Source-Code-Pro
+
 # Media keys
 bindsym XF86AudioRaiseVolume exec amixer set Master 2+
 bindsym XF86AudioLowerVolume exec amixer set Master 2-
