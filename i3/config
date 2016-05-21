@@ -189,7 +189,7 @@ bindsym $mod+d exec rofi -show run -bw 2 -lines 10 -width 500 -line-margin 5 -fo
 bindsym $mod+shift+s exec --no-startup-id scrot ~/pictures/screenshots/%Y-%d-%m-%T-scrot.png
 
 # lock
-bindsym $mod+x exec --no-startup-id i3lock-fancy -f Source-Code-Pro
+bindsym $mod+x exec --no-startup-id i3lock-fancy -p -f Source-Code-Pro
 
 # Media keys
 bindsym XF86AudioRaiseVolume exec amixer set Master 2+
