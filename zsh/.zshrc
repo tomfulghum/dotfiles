@@ -31,13 +31,15 @@ plugins=(git sudo systemd)
 
 # User configuration
 
-  export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-source $ZSH/oh-my-zsh.sh
+# Ruby
+export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+export GEM_HOME=$(ruby -e 'print Gem.user_dir')
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+# Source the oh-my-zsh script
+source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
