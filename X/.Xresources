@@ -52,11 +52,11 @@
 ! URxvt configuration
 !######################
 
-URxvt.font: 		xft:Source Code Pro:size=10
-URxvt.boldFont:		xft:Source Code Pro:bold:size=10
-URxvt.scrollBar: 	false
+URxvt.font: 		    xft:Source Code Pro:style=Regular:size=10
+URxvt.boldFont:		    xft:Source Code Pro:style=Bold:size=10
+URxvt.scrollBar: 	    false
 URxvt.cursorUnderline:	true
-URxvt.cursorBlink:	true
+URxvt.cursorBlink:	    true
 
 !###################
 ! rofi color theme
