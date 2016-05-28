@@ -52,11 +52,12 @@
 ! URxvt configuration
 !######################
 
-URxvt.font: 		    xft:Source Code Pro:style=Regular:size=10
-URxvt.boldFont:		    xft:Source Code Pro:style=Bold:size=10
+URxvt.font: 		    xft:Cousine:style=Regular:size=10
+URxvt.boldFont:		    xft:Cousine:style=Bold:size=10
 URxvt.scrollBar: 	    false
 URxvt.cursorUnderline:	true
 URxvt.cursorBlink:	    true
+URxvt.termName:         rxvt-256color
 
 !###################
 ! rofi color theme
@@ -67,3 +68,13 @@ rofi.color-window: #1d1f21, #81a2be, #373b41
 rofi.color-normal: #282a2e, #c5c8c6, #282a2e, #82a2be, #1d1f21
 rofi.color-active: #282a2e, #b5bd69, #282a2e, #b5bd68, #1d1f21
 rofi.color-urgent: #282a2e, #cc6666, #282a2e, #cc6666, #1d1f21
+
+!####################
+! XFT configuration
+!####################
+
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintslight
+Xft.hinting:    true
+Xft.antialias:  true
+Xft.rgba:       true
