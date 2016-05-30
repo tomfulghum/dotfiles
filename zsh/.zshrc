@@ -34,6 +34,9 @@ plugins=(git sudo systemd)
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# Add utils directory to path
+#export PATH="/home/tom/utils:$PATH"
+
 # Ruby
 export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 export GEM_HOME=$(ruby -e 'print Gem.user_dir')
