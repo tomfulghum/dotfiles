@@ -48,6 +48,5 @@ battery 0 {
 }
 
 time {
-    format = "  %d-%m-%Y %H:%M:%S" 
+    format = "  %d-%m-%Y |   %H:%M:%S"
 }
-
