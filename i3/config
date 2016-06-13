@@ -215,6 +215,6 @@ exec_always --no-startup-id feh --bg-scale /home/tom/pictures/wallpapers/wallpap
 
 # exec
 exec --no-startup-id compton --config "$HOME/.config/compton/compton.conf"
-exec --no-startup-id xtitle -s -t 90 -f "%{c}%s" | lemonbar -d -p -g x28 -f Cousine:size=10 -B $transp -F $base05
+#exec --no-startup-id xtitle -s -t 90 -f "%{c}%s" | lemonbar -d -n "LMNBAR" -p -g x28 -f Cousine:size=10 -B $transp -F $base05
 exec --no-startup-id dunst
 exec --no-startup-id udiskie
